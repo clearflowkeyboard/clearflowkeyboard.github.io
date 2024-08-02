@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearFlow: The Layout for Glide Typing</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #f4f4f9;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #ecdbff;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #ecf0f1;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+            color: #ffffff;
+        }
+
+        .main-content {
+            margin-left: 300px; /* increased width of the sidebar + padding */
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        p {
+            margin-bottom: 10px; /* general margin for paragraphs */
+        }
+
+
+        img {
+            display: block;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: disc inside;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            line-height: 1.6;
+            color: #2c3e50;
+            font-size: 1.1em;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Navigation</h2>
+    <a href="#section1">Introduction</a>
+    <a href="#section2">Layout</a>
+    <a href="#section3">Benefits over Qwerty</a>
+    <a href="#section4">Resources</a>
+</div>
+
+<div class="main-content">
+    <h1>ClearFlow: The Layout for Glide Typing</h1>
+    
+    <h2 id="section1">Introduction</h2>
+    <p>ClearFlow is a soft keyboard layout designed for high-speed and low-error glide typing. 
+        It was selected from more than 750,000 layout.  It significantly improves text input 
+        efficiency compared to Qwerty, because ClearFlow (1) enhances input accuracy, reducing
+         the necessity for backspace corrections by more than 35%, and (2) shortens the time 
+         required for drawing word-gestures. It increased the input speed over Qwerty by more 
+         than 10% on average, with the maximum increase being 22.3%.
+    </p>
+    
+    <h2 id="section2">Layout</h2>
+    <img src="keyboard.png" alt="keyboard interface">
+    
+    <h2 id="section3">Benefits over Qwerty</h2>
+    <ul>
+        <li>It shortens the finger travel distance by over 40% per word.</li>
+        <li>It reduces the backspace usage by nearly 30%.     </li>
+    </ul>
+    
+    <h2 id="section4">Resources</h2>
+    <p>FlowGames App: Mobile Games for Learning ClearFlow    </p>
+</div>
+
+<footer>
+    &copy; 2024 ClearFlow Typing. All rights reserved.
+</footer>
+
+</body>
+</html>
