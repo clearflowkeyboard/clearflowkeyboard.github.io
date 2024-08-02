@@ -20,6 +20,9 @@
             height: 100vh;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             position: fixed;
+            top: 0;
+            left: 0;
+            transition: transform 0.3 ease;
         }
 
         .sidebar h2 {
@@ -91,6 +94,25 @@
             color: #2c3e50;
             font-size: 1.1em;
             padding-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                /* Hide the sidebar offscreen on mobile */
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .sidebar {
+                transform: translateX(0);
+                /* Show the sidebar on larger screens */
+            }
         }
 
         footer {
